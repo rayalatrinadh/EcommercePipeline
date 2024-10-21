@@ -9,7 +9,7 @@ public class PipelineApplication {
 	public static void main(String[] args) {
 
 		System.out.println("Pipeline Validation");
-		Order order = new Order("Order1234",-55.2);
+		Order order = new Order("Order1234",55.2);
 
 		OrderProcessingPipeline pipeline = new OrderProcessingPipeline()
 				.addStages(new ValidationStage())
